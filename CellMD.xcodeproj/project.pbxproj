@@ -37,7 +37,6 @@
 		3A26A9211D4D2DF100EC3F72 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3A26A9231D4D2DF100EC3F72 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3A5A502D1D55329F008C7F82 /* HistoryTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryTableViewController.swift; sourceTree = "<group>"; };
-		3A7A85A61D4E7758006F50E9 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
 		3ACA59BD1D4D32A30054AAF7 /* CommandsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommandsTableViewController.swift; sourceTree = "<group>"; };
 		3AEDB0081D56469700BEDA11 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -57,7 +56,6 @@
 			isa = PBXGroup;
 			children = (
 				3A26A9161D4D2DF100EC3F72 /* CellMD */,
-				3A7A85A51D4E7758006F50E9 /* Frameworks */,
 				3A26A9151D4D2DF100EC3F72 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -83,14 +81,6 @@
 				3A26A9231D4D2DF100EC3F72 /* Info.plist */,
 			);
 			path = CellMD;
-			sourceTree = "<group>";
-		};
-		3A7A85A51D4E7758006F50E9 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				3A7A85A61D4E7758006F50E9 /* NotificationCenter.framework */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
