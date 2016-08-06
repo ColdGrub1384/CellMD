@@ -18,11 +18,18 @@ uicache
 <h1>News</h1>
 
 <h1>f.2.3</h1>
-[Fixed] Edit style deleting the function:
+[Fixed] Edit style editing the function:
 ```swift
     override func tableView(tableView: UITableView, editingStyleForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCellEditingStyle {
         return UITableViewCellEditingStyle.None
     }
+    
+    //to
+    
+    override func tableView(tableView: UITableView, editingStyleForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCellEditingStyle {
+        return UITableViewCellEditingStyle.Delete
+    }
+    
 ```
 
 <h1>f.2.2</h1>
