@@ -5,10 +5,6 @@
 
 [Screenshots](#screenshots)
 
-```html
-<script src="https://apis.google.com/js/platform.js"></script>
-<div class="g-ytsubscribe" data-channel="AdriTalking" data-layout="default" data-count="default"></div>
-```
 
 ##Installation##
 Download the deb file in iOS device, install the deb with a file explorer such as iFile or open the xcode project, build the project on a generic device, find the product, ssh the file in /Application directory and type in a Terminal or ssh:
