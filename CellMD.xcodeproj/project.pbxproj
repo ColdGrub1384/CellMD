@@ -13,7 +13,6 @@
 		3A26A9221D4D2DF100EC3F72 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A26A9201D4D2DF100EC3F72 /* LaunchScreen.storyboard */; };
 		3A5A502E1D55329F008C7F82 /* HistoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A5A502D1D55329F008C7F82 /* HistoryTableViewController.swift */; };
 		3ACA59BE1D4D32A30054AAF7 /* CommandsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ACA59BD1D4D32A30054AAF7 /* CommandsTableViewController.swift */; };
-		3AEDB0091D56469700BEDA11 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AEDB0081D56469700BEDA11 /* TableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -38,7 +37,6 @@
 		3A26A9231D4D2DF100EC3F72 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3A5A502D1D55329F008C7F82 /* HistoryTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryTableViewController.swift; sourceTree = "<group>"; };
 		3ACA59BD1D4D32A30054AAF7 /* CommandsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommandsTableViewController.swift; sourceTree = "<group>"; };
-		3AEDB0081D56469700BEDA11 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,7 +71,6 @@
 			children = (
 				3A26A9171D4D2DF100EC3F72 /* AppDelegate.swift */,
 				3ACA59BD1D4D32A30054AAF7 /* CommandsTableViewController.swift */,
-				3AEDB0081D56469700BEDA11 /* TableViewController.swift */,
 				3A5A502D1D55329F008C7F82 /* HistoryTableViewController.swift */,
 				3A26A91B1D4D2DF100EC3F72 /* Main.storyboard */,
 				3A26A91E1D4D2DF100EC3F72 /* Assets.xcassets */,
@@ -158,7 +155,6 @@
 				3A26A9181D4D2DF100EC3F72 /* AppDelegate.swift in Sources */,
 				3ACA59BE1D4D32A30054AAF7 /* CommandsTableViewController.swift in Sources */,
 				3A5A502E1D55329F008C7F82 /* HistoryTableViewController.swift in Sources */,
-				3AEDB0091D56469700BEDA11 /* TableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
