@@ -1,5 +1,5 @@
 # CellMD
-CellMD is an iOS Application for jailbroken devices to run shell commands.
+[CellMD](https://7c7a6179.dataplicity.io/Jailbreak/apt/CellMD/) is an iOS Application for jailbroken devices to run shell commands.
 
 [Download deb here](https://7c7a6179.dataplicity.io/Jailbreak/apt/CellMD/cellmd.deb)
 
@@ -26,7 +26,16 @@ CellMD is an iOS Application for jailbroken devices to run shell commands.
 
 
 
-[Page](https://7c7a6179.dataplicity.io/Jailbreak/apt/CellMD/)
+
+
+
+
+
+
+
+
+
+
 
 
 
