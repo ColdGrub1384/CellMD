@@ -15,9 +15,7 @@ class CommandsTableViewController: UITableViewController {
     
     var commands = ["killall SpringBoard","uicache"]
     var history: [String] = []
-    
-    var login: [String] = []
-    
+        
     @IBOutlet weak var Dark: UISwitch!
     @IBOutlet weak var darklabel: UILabel!
     @IBOutlet weak var switchview: UIView!
