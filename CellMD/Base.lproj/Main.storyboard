@@ -30,7 +30,7 @@
                                         <action selector="DarkVoid:" destination="YTS-js-1Le" eventType="valueChanged" id="ZgT-zX-Wzm"/>
                                     </connections>
                                 </switch>
-                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="c30-Wy-sJQ">
+                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsVerticalScrollIndicator="NO" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="c30-Wy-sJQ">
                                     <rect key="frame" x="0.0" y="218" width="601" height="246"/>
                                     <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
