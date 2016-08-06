@@ -58,9 +58,6 @@ class CommandsTableViewController: UITableViewController {
         }
     }
     
-    override func tableView(tableView: UITableView, editingStyleForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCellEditingStyle {
-        return UITableViewCellEditingStyle.None
-    }
     
     override func tableView(tableView: UITableView, canMoveRowAtIndexPath indexPath: NSIndexPath) -> Bool {
         return true
@@ -72,7 +69,7 @@ class CommandsTableViewController: UITableViewController {
     
     override func tableView(tableView: UITableView, moveRowAtIndexPath sourceIndexPath: NSIndexPath, toIndexPath destinationIndexPath: NSIndexPath) {
         
-        var item = commands[sourceIndexPath.row]
+        let item = commands[sourceIndexPath.row]
         
         commands.removeAtIndex(sourceIndexPath.row)
         commands.insert(item, atIndex: destinationIndexPath.row)
