@@ -6,38 +6,192 @@
 
 [Screenshots](#screenshots)
 
-<h2>News</h2>
+##Installation##
+Download the deb file in iOS device, install the deb with a file explorer such as iFile or open the xcode project, build the project on a generic device, find the product, ssh the file in /Application directory and type in a Terminal or ssh:
+```bash 
+uicache
+```
 
-<h3>f.2.3</h3>
-[Fixed] Edit style
+<h1>News</h1>
 
-<h3>f.2.2</h3>
-[Added] Reorder cells <br/>
-[Added] Clear history <br/>
-[Fixed] New icon <br/>
+<h1>f.2.3</h1>
+[Fixed] Edit style deleting the function:
+```swift
+    override func tableView(tableView: UITableView, editingStyleForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCellEditingStyle {
+        return UITableViewCellEditingStyle.None
+    }
+```
 
-<h3>f.2.1</h3>
-[Added] History <br/>
-[Added] Quick commands <br/>
-[Fixed] Changed UITextView with log text theme <br/>
+<h1>f.2.2</h1>
+[Added] Reorder cells: 
+```swift
 
-<h3>f.1.1</h3>
+    override func tableView(tableView: UITableView, editingStyleForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCellEditingStyle {
+        return UITableViewCellEditingStyle.None
+    }
+    override func tableView(tableView: UITableView, canMoveRowAtIndexPath indexPath: NSIndexPath) -> Bool {
+        return true
+    }
+    
+    override func tableView(tableView: UITableView, shouldIndentWhileEditingRowAtIndexPath indexPath: NSIndexPath) -> Bool {
+        return false
+    }
+
+    @IBAction func reorder(sender: AnyObject) {
+        if tableView.editing == true {
+            tableView.setEditing(false, animated: true)
+        }else {
+            tableView.setEditing(true, animated: true)
+        }
+    }
+```
+<br/>
+[Added] Clear history: 
+```swift
+   @IBAction func trash(sender: AnyObject) {
+        let alert = UIAlertController(title: "Remove", message: "Remove, history or all commands?", preferredStyle: .Alert)
+        alert.addAction(UIAlertAction(title: "Cancel", style: .Default, handler: nil))
+        
+        let rmhistory = UIAlertAction(title: "History", style: .Default) { (UIAlertAction) in
+            self.history = []
+            let historysaved = NSUserDefaults.standardUserDefaults()
+            historysaved.setValue(self.history, forKey: "History")
+            historysaved.synchronize()
+        }
+        
+        let rmcells = UIAlertAction(title: "All commands", style: .Default) { (UIAlertAction) in
+            self.commands = []
+            self.tableView.reloadData()
+            let commandssaved = NSUserDefaults.standardUserDefaults()
+            commandssaved.setValue(self.commands, forKey: "commands")
+            commandssaved.synchronize()
+            
+        }
+        
+        alert.addAction(rmhistory)
+        alert.addAction(rmcells)
+        
+        self.presentViewController(alert, animated: true, completion: nil)
+        
+    }
+
+```
+<br/>
+[Fixed] New icon:
+<br/>
+![icon](https://7c7a6179.dataplicity.io/Jailbreak/apt/CellMD/iTunesArtwork.png)
+<br/>
+
+<h1>f.2.1</h1>
+[Added] History:
+```swift
+
+class CommandsTableViewController: UITableViewController {
+   override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        var controller: HistoryTableViewController = segue.destinationViewController as! HistoryTableViewController
+        controller.history = history
+    }
+}
+
+class HistoryTableViewController: UITableViewController {
+    
+    var history: [String] = []
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+
+    }
+
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+       
+    }
+
+    override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+        return 1
+    }
+
+    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return history.count
+    }
+
+    
+    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCellWithIdentifier("items", forIndexPath: indexPath)
+        
+        cell.textLabel!.text = history[indexPath.row]
+        
+
+        return cell
+    }
+    
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        self.tableView.deselectRowAtIndexPath(indexPath, animated: true)
+        UIPasteboard.generalPasteboard().string = history[indexPath.row]
+        
+        let alert = UIAlertController(title: "Copied!", message: "\"\(history[indexPath.row])\" is copied.", preferredStyle: .Alert)
+        alert.addAction(UIAlertAction(title: "Ok", style: .Default, handler: nil))
+        self.presentViewController(alert, animated: true, completion: nil)
+    }
+    
+    override func viewWillDisappear(animated: Bool) {
+        super.viewWillDisappear(true)
+    }
+    
+
+    }
+```
+<br/>
+[Added] Quick commands:
+```swift
+   @IBOutlet weak var quickcmd: UITextField!
+   
+   @IBAction func sendcommand(sender: AnyObject) {
+        
+        if quickcmd.text == "clear" || quickcmd.text == "clear;" {
+            history.append(quickcmd.text!)
+            var historysaved = NSUserDefaults.standardUserDefaults()
+            historysaved.setValue(history, forKey: "History")
+            historysaved.synchronize()
+            logtext.text = ""
+        }else {
+        
+            let fp = popen(quickcmd.text!, "r")
+            var buf = Array<CChar>(count: 128, repeatedValue: 0)
+        
+            while fgets(&buf, CInt(buf.count), fp) != nil,
+                let str = String.fromCString(buf) {
+                   logtext.text = logtext.text+str
+            }
+            
+            history.append(quickcmd.text!)
+            var historysaved = NSUserDefaults.standardUserDefaults()
+            historysaved.setValue(history, forKey: "History")
+            historysaved.synchronize()
+        }
+        
+        quickcmd.text = ""
+        quickcmd.resignFirstResponder()
+    }
+```
+<br/>
+[Fixed] Changed UITextView with log text theme:
+```swift
+       @IBAction func DarkVoid(sender: AnyObject) {
+        var darksaved = NSUserDefaults.standardUserDefaults()
+        if Dark.on == true {
+            logtext.backgroundColor = .blackColor()
+            logtext.textColor = .whiteColor()
+        }else {
+            logtext.backgroundColor = .whiteColor()
+            logtext.textColor = .blackColor()
+        }
+    }
+```
+<br/>
+
+<h1>f.1.1</h1>
 [Added] Initial version
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 #Screenshots
