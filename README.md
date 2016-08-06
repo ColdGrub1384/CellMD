@@ -5,6 +5,9 @@ CellMD is an iOS Application for jailbroken devices to run shell commands.
 
 <h2>News</h2>
 
+<h3>f.2.3</h3>
+[Fixed] Edit style
+
 <h3>f.2.2</h3>
 [Added] Reorder cells <br/>
 [Added] Clear history <br/>
