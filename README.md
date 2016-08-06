@@ -17,6 +17,9 @@ uicache
 
 <h1>News</h1>
 
+<h1>f.2.4</h1>
+[Fixed] Crash on startup
+
 <h1>f.2.3</h1>
 [Fixed] Edit style editing the function:
 ```swift
@@ -24,7 +27,7 @@ uicache
         return UITableViewCellEditingStyle.None
     }
     
-    //to
+    // to
     
     override func tableView(tableView: UITableView, editingStyleForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCellEditingStyle {
         return UITableViewCellEditingStyle.Delete
