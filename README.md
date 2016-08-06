@@ -9,6 +9,9 @@
 ##Installation##
 Download the deb file in iOS device, install the deb with a file explorer such as iFile or open the xcode project, build the project on a generic device, find the product, ssh the file in /Application directory and type in a Terminal or ssh:
 ```bash 
+su root 
+[root password]
+chmod 775 /Applications/CellMD.app/CellMD
 uicache
 ```
 
