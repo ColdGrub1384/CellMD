@@ -26,15 +26,20 @@ CellMD is an iOS Application for jailbroken devices to run shell commands.
 
 
 
+![Page](https://7c7a6179.dataplicity.io/Jailbreak/apt/CellMD/)
+
+
+
+
 #Screenshots
-![alt tag](https://7c7a6179.dataplicity.io/Jailbreak/apt/CellMD/Github/1.PNG)
-![alt tag](https://7c7a6179.dataplicity.io/Jailbreak/apt/CellMD/Github/2.PNG)
-![alt tag](https://7c7a6179.dataplicity.io/Jailbreak/apt/CellMD/Github/3.PNG)
-![alt tag](https://7c7a6179.dataplicity.io/Jailbreak/apt/CellMD/Github/4.PNG)
-![alt tag](https://7c7a6179.dataplicity.io/Jailbreak/apt/CellMD/Github/5.PNG)
-![alt tag](https://7c7a6179.dataplicity.io/Jailbreak/apt/CellMD/Github/6.PNG)
-![alt tag](https://7c7a6179.dataplicity.io/Jailbreak/apt/CellMD/Github/7.PNG)
-![alt tag](https://7c7a6179.dataplicity.io/Jailbreak/apt/CellMD/Github/8.PNG)
-![alt tag](https://7c7a6179.dataplicity.io/Jailbreak/apt/CellMD/Github/9.PNG)
-![alt tag](https://7c7a6179.dataplicity.io/Jailbreak/apt/CellMD/Github/10.PNG)
-![alt tag](https://7c7a6179.dataplicity.io/Jailbreak/apt/CellMD/Github/11.PNG)
+![1](https://7c7a6179.dataplicity.io/Jailbreak/apt/CellMD/Github/1.PNG)
+![2](https://7c7a6179.dataplicity.io/Jailbreak/apt/CellMD/Github/2.PNG)
+![3](https://7c7a6179.dataplicity.io/Jailbreak/apt/CellMD/Github/3.PNG)
+![4](https://7c7a6179.dataplicity.io/Jailbreak/apt/CellMD/Github/4.PNG)
+![5](https://7c7a6179.dataplicity.io/Jailbreak/apt/CellMD/Github/5.PNG)
+![6](https://7c7a6179.dataplicity.io/Jailbreak/apt/CellMD/Github/6.PNG)
+![7](https://7c7a6179.dataplicity.io/Jailbreak/apt/CellMD/Github/7.PNG)
+![8](https://7c7a6179.dataplicity.io/Jailbreak/apt/CellMD/Github/8.PNG)
+![9](https://7c7a6179.dataplicity.io/Jailbreak/apt/CellMD/Github/9.PNG)
+![10](https://7c7a6179.dataplicity.io/Jailbreak/apt/CellMD/Github/10.PNG)
+![11](https://7c7a6179.dataplicity.io/Jailbreak/apt/CellMD/Github/11.PNG)
