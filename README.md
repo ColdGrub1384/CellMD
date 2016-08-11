@@ -14,7 +14,7 @@ will not have the write privileges.
 
 #Install in /Applications
 
-[Download deb here](https://7c7a6179.dataplicity.io/Jailbreak/apt/CellMD/cellmd.deb)
+[Download deb here](https://github.com/ColdGrub1384/CellMD/raw/master/fr.ada.cellmd_f.2.4_iphoneos-arm.deb)
 
 [Screenshots](#screenshots)
 
