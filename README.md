@@ -3,7 +3,7 @@
 
 #Install in /var/containers/Bundle/Application
 
-[Install app](https://i.diawi.com/dr5yTg) (Requierd AppSync)
+[Install app](https://7c7a6179.dataplicity.io/CellMD/) (Requierd AppSync)
 With this trick, CellMD 
 will not have the write privileges.
 
