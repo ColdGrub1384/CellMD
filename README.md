@@ -3,7 +3,7 @@
 
 #Install in /var/containers/Bundle/Application
 
-[Install app](https://webapp.diawi.com/install/RatQLx) (Requierd AppSync)
+[Install app](https://i.diawi.com/dr5yTg) (Requierd AppSync)
 With this trick, CellMD 
 will not have the write privileges.
 
