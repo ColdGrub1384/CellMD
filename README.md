@@ -9,7 +9,7 @@ will not have the write privileges.
 
 #Without Jailbreak
 
-To install CellMD without jailbreak, you can [download](https://7c7a6179.dataplicity.io/CellMD/CellMD.ipa) the IPA, [download](http://www.cydiaimpactor.com/) Cydia Impactor, open it, drop the IPA in Cydia Impactor, login with your Apple ID, in the iDevice, go to: Settings > Devices management > yourmail@domain.com and trust, with this trick, CellMD 
+To install CellMD without jailbreak, you can [download]() the IPA, [download](http://www.cydiaimpactor.com/) Cydia Impactor, open it, drop the IPA in Cydia Impactor, login with your Apple ID, in the iDevice, go to: Settings > Devices management > yourmail@domain.com and trust, with this trick, CellMD 
 will not have the write privileges.
 
 #Install in /Applications
