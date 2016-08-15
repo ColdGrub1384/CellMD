@@ -1,12 +1,6 @@
 # CellMD
 [CellMD](https://7c7a6179.dataplicity.io/Jailbreak/apt/CellMD/) is an iOS Application for jailbroken devices to run shell commands.
 
-#Install in /var/containers/Bundle/Application
-
-[Install app](https://7c7a6179.dataplicity.io/CellMD/) (Requierd AppSync)
-With this trick, CellMD 
-will not have the write privileges.
-
 #Without Jailbreak
 
 To install CellMD without jailbreak, you can [download](https://github.com/ColdGrub1384/CellMD/raw/master/CellMD.ipa) the IPA, [download](http://www.cydiaimpactor.com/) Cydia Impactor, open it, drop the IPA in Cydia Impactor, login with your Apple ID, in the iDevice, go to: Settings > Devices management > yourmail@domain.com and trust, with this trick, CellMD 
