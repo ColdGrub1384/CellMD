@@ -6,6 +6,14 @@
 To install CellMD without jailbreak, you can [download](https://github.com/ColdGrub1384/CellMD/raw/master/CellMD.ipa) the IPA, [download](http://www.cydiaimpactor.com/) Cydia Impactor, open it, drop the IPA in Cydia Impactor, login with your Apple ID, in the iDevice, go to: Settings > Devices management > yourmail@domain.com and trust, with this trick, CellMD 
 will not have the write privileges.
 
+#Install in /var/containers/Bundle/Application
+
+You can also [install](itms-services://?action=download-manifest&url=https://www.appaloosa-store.com/7247-adastore-store/mobile_application_updates/185928-cellmd/plist%3Fis_native_app_download_from_web_store%3Dtrue) in Mobile Safari the app in jailbroken device (Requierd AppSync)
+
+#Sudo
+
+You can [install](https://cydia.saurik.com/package/sudo/) sudo to root privileges.
+
 #Install in /Applications
 
 [Download deb here](https://github.com/ColdGrub1384/CellMD/raw/master/fr.ada.cellmd_f.2.4_iphoneos-arm.deb)
