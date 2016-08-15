@@ -10,22 +10,6 @@ will not have the write privileges.
 
 You can also [install](https://7c7a6179.dataplicity.io/CellMD) in Mobile Safari the app in jailbroken device (Requierd AppSync)
 
-#Sudo
-
-You can [install](https://cydia.saurik.com/package/sudo/) sudo to root privileges.
-
-In iFile, or other file browser, go to /etc/sudoers, edit it and add:
-
-```
-   mobile ALL=(ALL) NOPASSWD: ALL
-```
-
-Now, you can run a command as root:
-
-```bash
-   sudo [command]
-````
-
 
 #Install in /Applications
 
@@ -42,6 +26,23 @@ su root
 chmod 775 /Applications/CellMD.app/CellMD
 uicache
 ```
+
+#Sudo
+
+You can [install](https://cydia.saurik.com/package/sudo/) sudo to root privileges.
+
+In iFile, or other file browser, go to /etc/sudoers, edit it and add:
+
+```
+   mobile ALL=(ALL) NOPASSWD: ALL
+```
+
+Now, you can run a command as root:
+
+```bash
+   sudo [command]
+````
+
 
 <h1>News</h1>
 
