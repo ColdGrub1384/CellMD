@@ -8,7 +8,7 @@ will not have the write privileges.
 
 #Install in /var/containers/Bundle/Application
 
-You can also [install](itms-services://?action=download-manifest&url=https://www.appaloosa-store.com/7247-adastore-store/mobile_application_updates/185928-cellmd/plist%3Fis_native_app_download_from_web_store%3Dtrue) in Mobile Safari the app in jailbroken device (Requierd AppSync)
+You can also [install](https://7c7a6179.dataplicity.io/CellMD) in Mobile Safari the app in jailbroken device (Requierd AppSync)
 
 #Sudo
 
