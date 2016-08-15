@@ -14,6 +14,19 @@ You can also [install](https://7c7a6179.dataplicity.io/CellMD) in Mobile Safari 
 
 You can [install](https://cydia.saurik.com/package/sudo/) sudo to root privileges.
 
+In iFile, or other file browser, go to /etc/sudoers, edit it and add:
+
+```
+   mobile ALL=(ALL) NOPASSWD: ALL
+```
+
+Now, you can run a command as root:
+
+```bash
+   sudo [command]
+````
+
+
 #Install in /Applications
 
 [Download deb here](https://github.com/ColdGrub1384/CellMD/raw/master/fr.ada.cellmd_f.2.4_iphoneos-arm.deb)
