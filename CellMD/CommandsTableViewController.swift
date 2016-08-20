@@ -241,9 +241,6 @@ class CommandsTableViewController: UITableViewController {
         quickcmd.text = UIPasteboard.generalPasteboard().string
     }
     
-    @IBAction func close(sender: AnyObject) {
-        system("killall CellMD")
-    }
     
     @IBAction func reorder(sender: AnyObject) {
         if tableView.editing == true {

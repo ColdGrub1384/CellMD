@@ -92,11 +92,6 @@
                                     <action selector="trash:" destination="YTS-js-1Le" id="xRa-4d-F48"/>
                                 </connections>
                             </barButtonItem>
-                            <barButtonItem systemItem="stop" id="8nz-xq-1zq">
-                                <connections>
-                                    <action selector="close:" destination="YTS-js-1Le" id="btd-rS-c1s"/>
-                                </connections>
-                            </barButtonItem>
                         </leftBarButtonItems>
                         <rightBarButtonItems>
                             <barButtonItem systemItem="add" id="oUX-kG-6YI">
@@ -172,7 +167,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jug-Fs-dTP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="669" y="475"/>
+            <point key="canvasLocation" x="800" y="477"/>
         </scene>
     </scenes>
     <resources>
