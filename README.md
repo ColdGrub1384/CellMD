@@ -7,15 +7,8 @@ To install CellMD without jailbreak, you can [download](https://github.com/ColdG
 will not have the write privileges.
 
 
-#Install in /Applications
-
-[Download deb here](https://github.com/ColdGrub1384/CellMD/raw/master/fr.ada.cellmd_f.2.4_iphoneos-arm.deb)
-
-[Screenshots](#screenshots)
-
-
-##Installation##
-Download the deb file in iOS device, install the deb with a file explorer such as iFile or open the xcode project, build the project on a generic device, find the product, ssh the file in /Application directory and type in a Terminal or ssh:
+##Installation on /Applications##
+Open the xcode project, build the project on a generic device, find the product, ssh the file in /Application directory and type in a Terminal or ssh:
 ```bash 
 su root 
 [root password]
@@ -41,6 +34,10 @@ Now, you can run a command as root:
 
 
 <h1>News</h1>
+
+<h1>f.3</h1>
+[Added] Preference pane
+[Added] Sudo before commands
 
 <h1>f.2.4</h1>
 [Fixed] Crash on startup
