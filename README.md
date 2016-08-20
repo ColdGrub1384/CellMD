@@ -39,7 +39,7 @@ Now, you can run a command as root:
 <h1>News</h1>
 
 <h1>f.3</h1>
-[Added] Preference pane
+[Added] Preference pane <br/>
 [Added] Sudo before commands
 
 <h1>f.2.4</h1>
