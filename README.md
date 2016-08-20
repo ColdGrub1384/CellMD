@@ -1,13 +1,16 @@
 # CellMD
 CellMD is an iOS Application for jailbroken devices to run shell commands.
 
+#With AppSync
+[Install](itms-services://?action=download-manifest&url=https://betafamily.com/supersend/download-ipa/5abd80d8-781a-48c5-a873-4c0f2d42cdd4/) (Need Jailbreak and Appsync in [Hackyouriphone repo](http://repo.hackyouriphone.org/)
+
 #Without Jailbreak
 
 To install CellMD without jailbreak, you can [download](https://github.com/ColdGrub1384/CellMD/raw/master/CellMD.ipa) the IPA, [download](http://www.cydiaimpactor.com/) Cydia Impactor, open it, drop the IPA in Cydia Impactor, login with your Apple ID, in the iDevice, go to: Settings > Devices management > yourmail@domain.com and trust, with this trick, CellMD 
 will not have the write privileges.
 
 
-##Installation on /Applications##
+##Installation on /Applications
 Open the xcode project, build the project on a generic device, find the product, ssh the file in /Application directory and type in a Terminal or ssh:
 ```bash 
 su root 
