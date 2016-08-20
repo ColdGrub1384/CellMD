@@ -2,7 +2,7 @@
 CellMD is an iOS Application for jailbroken devices to run shell commands.
 
 #With AppSync
-<a href="https://7c7a6179.dataplicity.io/CellMD/">Install</a> (Need Jailbreak and Appsync in [Hackyouriphone repo](http://repo.hackyouriphone.org/)
+<a href="https://i.diawi.com/dVxs53">Install</a> (Need Jailbreak and Appsync in [Hackyouriphone repo](http://repo.hackyouriphone.org/)
 
 #Without Jailbreak
 
