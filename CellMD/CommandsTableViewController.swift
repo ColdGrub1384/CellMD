@@ -18,6 +18,8 @@ class CommandsTableViewController: UITableViewController {
     var commands = ["echo Made By ColdGrub1384"]
     var history: [String] = []
     
+    var before = ""
+    
     var sudo = false
     
     @IBOutlet weak var switchview: UIView!
@@ -47,6 +49,12 @@ class CommandsTableViewController: UITableViewController {
                self.tableView.reloadData()
             }
         }
+        
+        if Settings.valueForKey("command") != nil {
+            before = Settings.valueForKey("command") as! String
+            print(before)
+        }
+        
         
         if Settings.valueForKey("sudo") != nil {
             sudo = Settings.valueForKey("sudo") as! Bool
@@ -122,6 +130,8 @@ class CommandsTableViewController: UITableViewController {
         
         if sudo == true {
             fp = popen("sudo "+commands[indexPath.row], "r")
+        }else if before != "" {
+            fp = popen(before+" "+commands[indexPath.row], "r")
         }else {
             fp = popen(commands[indexPath.row], "r")
         }
@@ -212,6 +222,10 @@ class CommandsTableViewController: UITableViewController {
         
             if sudo == true {
                quickcmd.text = "sudo "+quickcmd.text!
+            }else if before != "" {
+                quickcmd.text = before+" "+quickcmd.text!
+            }else {
+                print("...")
             }
             
             let fp = popen(quickcmd.text!, "r")
