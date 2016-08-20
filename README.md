@@ -39,7 +39,7 @@ Now, you can run a command as root:
 <h1>News</h1>
 
 <h1>f.3</h1>
-[Added] Preference pane <br/>
+[Added] Preference pane
 [Added] Sudo before commands
 
 <h1>f.2.4</h1>
@@ -116,8 +116,6 @@ Now, you can run a command as root:
 ```
 <br/>
 [Fixed] New icon:
-<br/>
-![icon](https://7c7a6179.dataplicity.io/Jailbreak/apt/CellMD/iTunesArtwork.png)
 <br/>
 
 <h1>f.2.1</h1>
