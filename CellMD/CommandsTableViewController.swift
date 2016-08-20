@@ -13,11 +13,13 @@ import Darwin
 
 class CommandsTableViewController: UITableViewController {
     
-    var commands = ["killall SpringBoard","uicache"]
+    var dark = false
+    
+    var commands = ["echo Made By ColdGrub1384"]
     var history: [String] = []
-        
-    @IBOutlet weak var Dark: UISwitch!
-    @IBOutlet weak var darklabel: UILabel!
+    
+    var sudo = false
+    
     @IBOutlet weak var switchview: UIView!
     @IBOutlet weak var button: UIButton!
     
@@ -27,28 +29,27 @@ class CommandsTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        button.hidden = true
-        Dark.on = false
         let commandssaved = NSUserDefaults.standardUserDefaults()
         if commandssaved.valueForKey("commands") != nil {
             commands = commandssaved.valueForKey("commands") as! [String]
             self.tableView.reloadData()
         }
         
-        var darksaved = NSUserDefaults.standardUserDefaults()
-        if darksaved.valueForKey("Dark") != nil {
-            if darksaved.valueForKey("Dark") as! Bool == true {
+        var Settings = NSUserDefaults.standardUserDefaults()
+        if Settings.valueForKey("DarkMode") != nil {
+            if Settings.valueForKey("DarkMode") as! Bool == true {
+               dark = true
                self.view.backgroundColor = .blackColor()
-               darklabel.textColor = .whiteColor()
                switchview.backgroundColor = .blackColor()
                logtext.backgroundColor = .blackColor()
                logtext.textColor = .whiteColor()
                self.navigationController?.navigationBar.tintColor = .blackColor()
                self.tableView.reloadData()
-               darksaved.setValue(Dark.on, forKey: "Dark")
-               darksaved.synchronize()
-               Dark.on = true
             }
+        }
+        
+        if Settings.valueForKey("sudo") != nil {
+            sudo = Settings.valueForKey("sudo") as! Bool
         }
         
         var historysaved = NSUserDefaults.standardUserDefaults()
@@ -104,7 +105,7 @@ class CommandsTableViewController: UITableViewController {
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("command", forIndexPath: indexPath)
         cell.textLabel!.text = commands[indexPath.row]
-        if Dark.on == true {
+        if  dark == true {
             cell.textLabel!.textColor = .whiteColor()
             cell.backgroundColor = .blackColor()
         }else {
@@ -116,7 +117,15 @@ class CommandsTableViewController: UITableViewController {
     
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         self.tableView.deselectRowAtIndexPath(indexPath, animated: true)
-        let fp = popen(commands[indexPath.row], "r")
+        
+        var fp = popen("", "r")
+        
+        if sudo == true {
+            fp = popen("sudo "+commands[indexPath.row], "r")
+        }else {
+            fp = popen(commands[indexPath.row], "r")
+        }
+        
         var buf = Array<CChar>(count: 128, repeatedValue: 0)
         
         while fgets(&buf, CInt(buf.count), fp) != nil,
@@ -151,31 +160,6 @@ class CommandsTableViewController: UITableViewController {
         alert.addAction(action)
         self.presentViewController(alert, animated: true, completion: nil)
         
-    }
-    
-    @IBAction func DarkVoid(sender: AnyObject) {
-        var darksaved = NSUserDefaults.standardUserDefaults()
-        if Dark.on == true {
-            self.view.backgroundColor = .blackColor()
-            darklabel.textColor = .whiteColor()
-            switchview.backgroundColor = .blackColor()
-            logtext.backgroundColor = .blackColor()
-            logtext.textColor = .whiteColor()
-            self.navigationController?.navigationBar.tintColor = .blackColor()
-            self.tableView.reloadData()
-            darksaved.setValue(Dark.on, forKey: "Dark")
-            darksaved.synchronize()
-        }else {
-            self.view.backgroundColor = .whiteColor()
-            darklabel.textColor = .blackColor()
-            switchview.backgroundColor = .whiteColor()
-            logtext.backgroundColor = .whiteColor()
-            logtext.textColor = .blackColor()
-            self.navigationController?.navigationBar.tintColor = button.currentTitleColor
-            self.tableView.reloadData()
-            darksaved.setValue(Dark.on, forKey: "Dark")
-            darksaved.synchronize()
-        }
     }
     
     override func tableView(tableView: UITableView, editActionsForRowAtIndexPath indexPath: NSIndexPath) -> [UITableViewRowAction]? {
@@ -226,6 +210,10 @@ class CommandsTableViewController: UITableViewController {
             logtext.text = ""
         }else {
         
+            if sudo == true {
+               quickcmd.text = "sudo "+quickcmd.text!
+            }
+            
             let fp = popen(quickcmd.text!, "r")
             var buf = Array<CChar>(count: 128, repeatedValue: 0)
         
