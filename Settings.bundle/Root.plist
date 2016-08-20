@@ -40,7 +40,7 @@
 		</dict>
 		<dict>
 			<key>Type</key>
-			<string>PSTitleValueSpecifier</string>
+			<string>PSGroupSpecifier</string>
 			<key>Title</key>
 			<string>To run commands as root,  you need to install Sudo, in Saurik repo.</string>
 			<key>Key</key>
