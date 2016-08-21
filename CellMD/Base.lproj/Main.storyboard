@@ -18,7 +18,7 @@
                             <rect key="frame" x="0.0" y="136" width="600" height="464"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
-                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" showsVerticalScrollIndicator="NO" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="c30-Wy-sJQ">
+                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsVerticalScrollIndicator="NO" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="c30-Wy-sJQ">
                                     <rect key="frame" x="0.0" y="218" width="601" height="246"/>
                                     <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -48,7 +48,7 @@
                                 <constraint firstItem="gC3-EA-b9m" firstAttribute="leading" secondItem="KoV-83-C29" secondAttribute="leading" constant="299" id="7kx-K1-1dA"/>
                                 <constraint firstAttribute="bottom" secondItem="c30-Wy-sJQ" secondAttribute="bottom" id="Idg-Ss-UQ8"/>
                                 <constraint firstItem="3Yf-vi-r5c" firstAttribute="top" secondItem="KoV-83-C29" secondAttribute="top" constant="29" id="J4f-Ro-lbB"/>
-                                <constraint firstItem="c30-Wy-sJQ" firstAttribute="top" secondItem="gC3-EA-b9m" secondAttribute="bottom" constant="26" id="LPb-Fv-R9z"/>
+                                <constraint firstItem="c30-Wy-sJQ" firstAttribute="top" secondItem="gC3-EA-b9m" secondAttribute="bottom" constant="24" id="LPb-Fv-R9z"/>
                                 <constraint firstItem="Jgg-ha-Rg5" firstAttribute="top" secondItem="3Yf-vi-r5c" secondAttribute="bottom" constant="8" symbolic="YES" id="OF7-jX-Swr"/>
                                 <constraint firstItem="3Yf-vi-r5c" firstAttribute="trailing" secondItem="KoV-83-C29" secondAttribute="trailingMargin" id="OPL-Go-gSl"/>
                                 <constraint firstItem="Jgg-ha-Rg5" firstAttribute="centerX" secondItem="c30-Wy-sJQ" secondAttribute="centerX" id="Wlw-dA-qpb"/>

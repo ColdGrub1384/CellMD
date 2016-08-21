@@ -38,6 +38,8 @@
 		3A26A9231D4D2DF100EC3F72 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3A3D15D01D67B61C00371B7B /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		3A5A502D1D55329F008C7F82 /* HistoryTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryTableViewController.swift; sourceTree = "<group>"; };
+		3A5DFAA11D69FCBB00B28A5F /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Main.strings; sourceTree = "<group>"; };
+		3A5DFAA21D69FCBB00B28A5F /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		3ACA59BD1D4D32A30054AAF7 /* CommandsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommandsTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -169,6 +171,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				3A26A91C1D4D2DF100EC3F72 /* Base */,
+				3A5DFAA11D69FCBB00B28A5F /* fr */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -177,6 +180,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				3A26A9211D4D2DF100EC3F72 /* Base */,
+				3A5DFAA21D69FCBB00B28A5F /* fr */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
