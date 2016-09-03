@@ -13,7 +13,7 @@ will not have the write privileges.
 ##Installation on /Applications
 Open the xcode project, build the project on a generic device, find the product, ssh the file in /Application directory and type in a Terminal or ssh:
 ```bash 
-su root 
+su root
 [root password]
 chmod 775 /Applications/CellMD.app/CellMD
 uicache
@@ -35,11 +35,29 @@ Now, you can run a command as root:
    sudo [command]
 ````
 
+# uicache and killall
+User apps cannot run commands ```uicache``` and ```killalll```, BUT I coded an command line tool to run uicache and killall on users apps.
+Install [cmd](https://7c7a6179.dataplicity.io/apt/Uploads/debs/cmd.deb) in my cydia repo: [http://7c7a6179.dataplicity.io/apt/Uploads](http://7c7a6179.dataplicity.io/apt/Uploads)
+
+### Usage:
+
+run as root:
+```bash
+cmd "command to execute"
+```
+
+or:
+chmod 777 the bin of cmd:
+```bash
+chmod 777 /usr/bin/cmd
+```
+
+and run cmd
 
 <h1>News</h1>
 
 <h1>f.3</h1>
-[Added] Preference pane
+[Added] Preference pane<br/>
 [Added] Sudo before commands
 
 <h1>f.2.4</h1>
