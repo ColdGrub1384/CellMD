@@ -56,6 +56,9 @@ and run cmd
 
 <h1>News</h1>
 
+<h1>f.4</h1>
+[Added] Today extention<br/>
+
 <h1>f.3</h1>
 [Added] Preference pane<br/>
 [Added] Sudo before commands
