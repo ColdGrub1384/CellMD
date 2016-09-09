@@ -15,12 +15,14 @@ class CommandsTableViewController: UITableViewController {
     
     var dark = false
     
-    var commands = ["echo Made By ColdGrub1384"]
+    var commands = ["echo \"Made By ColdGrub1384\"","echo \"If you want to use the widget you need to have Jailbreak and Sudo installed and configurated, Open CellMD and put the command(s) in /Library/CellMD/Command\""]
     var history: [String] = []
     
     var before = ""
     
     var sudo = false
+    
+    var defaults = NSUserDefaults.standardUserDefaults()
     
     @IBOutlet weak var switchview: UIView!
     @IBOutlet weak var button: UIButton!
@@ -31,6 +33,13 @@ class CommandsTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        system("sudo mkdir /Library/CellMD")
+        system("sudo touch /Library/CellMD/Command")
+        system("sudo chmod 777 /Library/CellMD/Command")
+        
+        quickcmd.text = NSUserDefaults.standardUserDefaults().valueForKey("widgetcmd") as! String!
+        
         let commandssaved = NSUserDefaults.standardUserDefaults()
         if commandssaved.valueForKey("commands") != nil {
             commands = commandssaved.valueForKey("commands") as! [String]

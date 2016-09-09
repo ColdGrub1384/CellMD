@@ -13,8 +13,24 @@
 		3A26A9221D4D2DF100EC3F72 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A26A9201D4D2DF100EC3F72 /* LaunchScreen.storyboard */; };
 		3A3D15D11D67B61C00371B7B /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 3A3D15D01D67B61C00371B7B /* Settings.bundle */; };
 		3A5A502E1D55329F008C7F82 /* HistoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A5A502D1D55329F008C7F82 /* HistoryTableViewController.swift */; };
+		3A7BE17C1D822B68008C0129 /* HistoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A5A502D1D55329F008C7F82 /* HistoryTableViewController.swift */; };
+		3A876D4E1D8228DF006334F6 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3ACA65441D821E8F000C11EC /* NotificationCenter.framework */; };
+		3A876D511D8228E0006334F6 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A876D501D8228E0006334F6 /* TodayViewController.swift */; };
+		3A876D541D8228E0006334F6 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A876D521D8228E0006334F6 /* MainInterface.storyboard */; };
+		3A876D581D8228E0006334F6 /* CellMD - Run command.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 3A876D4D1D8228DF006334F6 /* CellMD - Run command.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		3A876D5C1D8228E9006334F6 /* CommandsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ACA59BD1D4D32A30054AAF7 /* CommandsTableViewController.swift */; };
 		3ACA59BE1D4D32A30054AAF7 /* CommandsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ACA59BD1D4D32A30054AAF7 /* CommandsTableViewController.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3A876D561D8228E0006334F6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3A26A90C1D4D2DF100EC3F72 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3A876D4C1D8228DF006334F6;
+			remoteInfo = "CellMD - Run command";
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		3A7A85B51D4E7758006F50E9 /* Embed App Extensions */ = {
@@ -23,6 +39,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
+				3A876D581D8228E0006334F6 /* CellMD - Run command.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -40,7 +57,12 @@
 		3A5A502D1D55329F008C7F82 /* HistoryTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryTableViewController.swift; sourceTree = "<group>"; };
 		3A5DFAA11D69FCBB00B28A5F /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Main.strings; sourceTree = "<group>"; };
 		3A5DFAA21D69FCBB00B28A5F /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		3A876D4D1D8228DF006334F6 /* CellMD - Run command.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "CellMD - Run command.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A876D501D8228E0006334F6 /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
+		3A876D531D8228E0006334F6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		3A876D551D8228E0006334F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3ACA59BD1D4D32A30054AAF7 /* CommandsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommandsTableViewController.swift; sourceTree = "<group>"; };
+		3ACA65441D821E8F000C11EC /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +70,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A876D4A1D8228DF006334F6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A876D4E1D8228DF006334F6 /* NotificationCenter.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +89,8 @@
 			children = (
 				3A3D15D01D67B61C00371B7B /* Settings.bundle */,
 				3A26A9161D4D2DF100EC3F72 /* CellMD */,
+				3A876D4F1D8228E0006334F6 /* CellMD - Run command */,
+				3ACA65431D821E8F000C11EC /* Frameworks */,
 				3A26A9151D4D2DF100EC3F72 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -67,6 +99,7 @@
 			isa = PBXGroup;
 			children = (
 				3A26A9141D4D2DF100EC3F72 /* CellMD.app */,
+				3A876D4D1D8228DF006334F6 /* CellMD - Run command.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -85,6 +118,24 @@
 			path = CellMD;
 			sourceTree = "<group>";
 		};
+		3A876D4F1D8228E0006334F6 /* CellMD - Run command */ = {
+			isa = PBXGroup;
+			children = (
+				3A876D501D8228E0006334F6 /* TodayViewController.swift */,
+				3A876D521D8228E0006334F6 /* MainInterface.storyboard */,
+				3A876D551D8228E0006334F6 /* Info.plist */,
+			);
+			path = "CellMD - Run command";
+			sourceTree = "<group>";
+		};
+		3ACA65431D821E8F000C11EC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3ACA65441D821E8F000C11EC /* NotificationCenter.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -100,11 +151,29 @@
 			buildRules = (
 			);
 			dependencies = (
+				3A876D571D8228E0006334F6 /* PBXTargetDependency */,
 			);
 			name = CellMD;
 			productName = CellMD;
 			productReference = 3A26A9141D4D2DF100EC3F72 /* CellMD.app */;
 			productType = "com.apple.product-type.application";
+		};
+		3A876D4C1D8228DF006334F6 /* CellMD - Run command */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3A876D591D8228E0006334F6 /* Build configuration list for PBXNativeTarget "CellMD - Run command" */;
+			buildPhases = (
+				3A876D491D8228DF006334F6 /* Sources */,
+				3A876D4A1D8228DF006334F6 /* Frameworks */,
+				3A876D4B1D8228DF006334F6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "CellMD - Run command";
+			productName = "CellMD - Run command";
+			productReference = 3A876D4D1D8228DF006334F6 /* CellMD - Run command.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -117,6 +186,9 @@
 				ORGANIZATIONNAME = Adrian;
 				TargetAttributes = {
 					3A26A9131D4D2DF100EC3F72 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					3A876D4C1D8228DF006334F6 = {
 						CreatedOnToolsVersion = 7.3.1;
 					};
 				};
@@ -135,6 +207,7 @@
 			projectRoot = "";
 			targets = (
 				3A26A9131D4D2DF100EC3F72 /* CellMD */,
+				3A876D4C1D8228DF006334F6 /* CellMD - Run command */,
 			);
 		};
 /* End PBXProject section */
@@ -151,6 +224,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		3A876D4B1D8228DF006334F6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A876D541D8228E0006334F6 /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -164,7 +245,25 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		3A876D491D8228DF006334F6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A876D511D8228E0006334F6 /* TodayViewController.swift in Sources */,
+				3A876D5C1D8228E9006334F6 /* CommandsTableViewController.swift in Sources */,
+				3A7BE17C1D822B68008C0129 /* HistoryTableViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3A876D571D8228E0006334F6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3A876D4C1D8228DF006334F6 /* CellMD - Run command */;
+			targetProxy = 3A876D561D8228E0006334F6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		3A26A91B1D4D2DF100EC3F72 /* Main.storyboard */ = {
@@ -183,6 +282,14 @@
 				3A5DFAA21D69FCBB00B28A5F /* fr */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		3A876D521D8228E0006334F6 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3A876D531D8228E0006334F6 /* Base */,
+			);
+			name = MainInterface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -284,6 +391,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/CellMD",
+					"$(PROJECT_DIR)/Settings.bundle",
 				);
 				INFOPLIST_FILE = CellMD/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -305,6 +413,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/CellMD",
+					"$(PROJECT_DIR)/Settings.bundle",
 				);
 				INFOPLIST_FILE = CellMD/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -312,6 +421,32 @@
 				PRODUCT_BUNDLE_IDENTIFIER = ch.ada.CellMD;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+			};
+			name = Release;
+		};
+		3A876D5A1D8228E0006334F6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "-";
+				INFOPLIST_FILE = "CellMD - Run command/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "ch.ada.CellMD.CellMD---Run-command";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		3A876D5B1D8228E0006334F6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "-";
+				INFOPLIST_FILE = "CellMD - Run command/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "ch.ada.CellMD.CellMD---Run-command";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 			};
 			name = Release;
 		};
@@ -332,6 +467,15 @@
 			buildConfigurations = (
 				3A26A9271D4D2DF100EC3F72 /* Debug */,
 				3A26A9281D4D2DF100EC3F72 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3A876D591D8228E0006334F6 /* Build configuration list for PBXNativeTarget "CellMD - Run command" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3A876D5A1D8228E0006334F6 /* Debug */,
+				3A876D5B1D8228E0006334F6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

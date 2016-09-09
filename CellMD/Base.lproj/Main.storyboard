@@ -18,20 +18,16 @@
                             <rect key="frame" x="0.0" y="136" width="600" height="464"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
-                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsVerticalScrollIndicator="NO" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="c30-Wy-sJQ">
-                                    <rect key="frame" x="0.0" y="218" width="601" height="246"/>
-                                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                </textView>
                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Quick command" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3Yf-vi-r5c">
                                     <rect key="frame" x="8" y="29" width="584" height="30"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                     <textInputTraits key="textInputTraits"/>
                                 </textField>
-                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jgg-ha-Rg5">
+                                <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jgg-ha-Rg5">
                                     <rect key="frame" x="8" y="67" width="584" height="30"/>
-                                    <state key="normal" title="send"/>
+                                    <state key="normal" title="send">
+                                        <color key="titleColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                    </state>
                                     <connections>
                                         <action selector="sendcommand:" destination="YTS-js-1Le" eventType="touchUpInside" id="ous-ry-ua4"/>
                                     </connections>
@@ -42,6 +38,12 @@
                                         <constraint firstAttribute="width" constant="46" id="DJm-fd-gIu"/>
                                     </constraints>
                                 </button>
+                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsVerticalScrollIndicator="NO" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="c30-Wy-sJQ">
+                                    <rect key="frame" x="0.0" y="218" width="601" height="246"/>
+                                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <fontDescription key="fontDescription" name="CourierNewPSMT" family="Courier New" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                </textView>
                             </subviews>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <constraints>

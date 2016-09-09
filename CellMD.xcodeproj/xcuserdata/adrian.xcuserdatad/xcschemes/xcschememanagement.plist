@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>CellMD - Run command.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 		<key>CellMD.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -18,6 +23,16 @@
 			<true/>
 		</dict>
 		<key>3A7A85A31D4E7758006F50E9</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>3A876D4C1D8228DF006334F6</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>3ACA65411D821E8F000C11EC</key>
 		<dict>
 			<key>primary</key>
 			<true/>
